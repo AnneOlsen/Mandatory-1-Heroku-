@@ -35,14 +35,14 @@ public class Designers {
     @PutMapping("/designers/{id}")
     public Designer updateDesignerById(@PathVariable Long id, @RequestBody Designer updatedDesigner){
         return designers.save(updatedDesigner);
-        // Ikke rigtig
+
     }
 
     // Deletes a designer with a specific id
     @DeleteMapping("/designers/{id}")
     public void deleteDesignerById(@PathVariable Long id){
         designers.deleteById(id);
-        System.out.println("The designer has been deletet succesfully");
+        System.out.println("The designer has been deleted succesfully");
     }
 
 
